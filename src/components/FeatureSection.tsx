@@ -1,13 +1,39 @@
-
+import borrow from "../assets/borrow.svg"
+import lend from '../assets/lend.svg'
+import earnInterest from '../assets/earn-interest.svg'
 
 const FeatureSection = () => {
     return ( 
-        <div className="flex justify-center bg-[#2E4F4F]">
-            <div className="flex text-white my-[50px] max-w-[1024px] gap-6">
+        <div className="flex flex-col items-center bg-[#2E4F4F] py-10">
+            <h2 className="text-white font-bold text-3xl mt-20">Our Features</h2>
+            <div className="flex text-white my-[50px] max-w-[1024px] gap-10">
 
-            <div className="w-[100px] h-[200px] border-white border">Lend</div>
-            <div className="w-[100px] h-[200px] border-white border">Borrow</div>
-            <div className="w-[100px] h-[200px] border-white border">Earn Interest</div>
+            {/* Borrow */}
+            <div className="w-[300px] h-[300px] border-white border flex flex-col items-center ">
+            <div className="w-[80%] h-[80%] p-6">
+                <img src={borrow} className="w-[100%] h-[100%] object-contain" />
+                </div>
+                <p>Borrow</p>
+            </div>
+
+            {/* Lend */}
+
+            <div className="w-[300px] h-[300px] border-white border flex flex-col items-center">
+            <div className="w-[80%] h-[80%] p-6">
+                <img src={lend} className="w-[100%] object-cover" />
+            </div>
+            <p>Lend</p>
+            </div>
+
+            {/* Earn interest */}
+
+            <div className="w-[300px] h-[300px] border-white border flex flex-col items-center">
+            
+            <div className="w-[80%] h-[80%] p-6">
+            <img src={earnInterest} className="w-[100%] object-cover"  />
+            </div>
+                <p>Earn Interest</p>
+            </div>
 
             </div>
 
