@@ -10,19 +10,22 @@
 
  .nav-btn{
     padding: 5px;
-    visibility: hidden;
+    display: none;
     opacity: 0;
     font-size: 1.8rem;
-
 }
 
 @media screen and (max-width: 1024px){
-    .nav-btn{
-        visibility: visible;
-        opacity: 1;
 
+    .nav-holder{
+        margin-right: 1.2rem;
+        margin-left: 1.2rem;
     }
 
+    .nav-btn{
+        display: block;
+        opacity: 1;
+    }
   
     .nav-ul{
         display: flex;
@@ -36,8 +39,7 @@
         height: 100%;
         width: 100%;
         background-color: var(--mainColor);
-        transition: 1s;
-        
+        transition: 1s;        
     }
 
     .responsive-nav{
@@ -49,8 +51,4 @@
         top: 1.5rem;
         right: 1.5rem;
     }
-
-   
-
-
 }
